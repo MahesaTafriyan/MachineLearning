@@ -1,57 +1,57 @@
-# 🚀 Machine Learning Projects  
+# 🤖 Hand Gesture Recognition & Control System  
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)  
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.0.2-orange)  
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.7-lightgrey)  
-![License](https://img.shields.io/badge/License-MIT-green)  
+![OpenCV](https://img.shields.io/badge/OpenCV-4.5%2B-green)  
+![MediaPipe](https://img.shields.io/badge/MediaPipe-0.10%2B-orange)  
+![YOLOv8](https://img.shields.io/badge/YOLOv8-8.0%2B-red)  
 
-Koleksi proyek Machine Learning untuk pemula hingga menengah, mencakup klasifikasi, regresi, NLP, dan deep learning.  
+Sistem canggih yang menggabungkan:  
+- **Deteksi gestur tangan** dengan klasifikasi pesan  
+- **Kontrol mouse** menggunakan jari telunjuk  
+- **Deteksi objek real-time** dengan YOLOv8  
 
----
+## 🌟 Fitur Utama
+1. **Gesture Recognition**  
+   - Mengenali 6+ gestur tangan (e.g., "Haloo", "Nama aku Gamma")  
+   - Deteksi sentuhan jempol-telunjuk ("sehat selalu")  
 
-## 📋 Daftar Projek  
+2. **Air Mouse Controller**  
+   - Kontrol kursor komputer dengan gerakan jari telunjuk  
+   - Optimasi FPS tinggi (>30fps)  
 
-### 1. Prediksi Harga Rumah  
-- **Dataset**: [Boston Housing](https://www.kaggle.com/datasets/vikrishnan/boston-house-prices)  
-- **Algoritma**:  
-  - Linear Regression  
-  - Decision Tree  
-  - Random Forest  
-- **Metrik Evaluasi**:  
-  - RMSE: 3.21  
-  - R² Score: 0.89  
+3. **Object Detection**  
+   - Integrasi YOLOv8 untuk deteksi objek bersamaan  
 
-### 2. Klasifikasi Bunga Iris  
-- **Dataset**: [Iris Species](https://www.kaggle.com/datasets/uciml/iris)  
-- **Algoritma**:  
-  - SVM (RBF Kernel)  
-  - K-Nearest Neighbors (KNN)  
-- **Akurasi**: 98%  
+## 🛠️ Instalasi
+### Prasyarat
+- Python 3.8+
+- Webcam
 
-### 3. Deteksi Spam SMS  
-- **Dataset**: [UCI SMS Spam Collection](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)  
-- **Algoritma**:  
-  - Naive Bayes  
-  - LSTM (TensorFlow)  
-- **Akurasi**: 99%  
+### Langkah Instalasi
+```bash
+https://github.com/MahesaTafriyan/MachineLearning.git
+cd MachineLearning
+pip install -r requirements.txt
+```
 
-### 4. Chatbot Sederhana  
-- **Library**:  
-  - NLTK  
-  - TensorFlow NLP  
-- **Fitur**:  
-  - Intent Recognition  
-  - Respons Dinamis  
+## Cara Menjalankan
 
----
+### 1. Deteksi Gestur + YOLOv8
+```bash
+python gesture_control.py
+```
 
-## 🛠️ Instalasi  
+Gestur yang dikenali:
 
-### Prasyarat  
-- Python 3.8+  
-- pip  
+Gestur (Jari Terbuka)	Pesan
+👍 + 👆	"sehat selalu"
+✋ (5 jari)	"Haloo"
+✌️ (2 jari)	"HAIII"
 
-### Langkah-langkah:  
-1. Clone repositori:  
-   ```bash
-   git clone https://github.com/MahesaTafriyan/MachineLearning.git
-   cd MachineLearning
+### 2. Kontrol Mouse
+```bash
+python mouse_controller.py
+```
+Fitur:
+
+- Gerakkan jari telunjuk untuk kontrol kursor
+- FPS real-time display
