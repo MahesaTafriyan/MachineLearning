@@ -28,7 +28,7 @@ Sistem canggih yang menggabungkan:
 
 ### Langkah Instalasi
 ```bash
-https://github.com/MahesaTafriyan/MachineLearning.git
+git clone https://github.com/MahesaTafriyan/MachineLearning.git
 cd MachineLearning
 pip install -r requirements.txt
 ```
